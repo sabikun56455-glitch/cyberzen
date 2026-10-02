@@ -1,0 +1,237 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b1020"><meta name="description" content="CyberZen digital safety toolkit for recognizing, preventing and responding to online harassment."><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><title>Digital Safety Toolkit</title><style>
+:root{--bg:#f5f7fb;--card:#fff;--text:#121827;--muted:#667085;--line:#e6e9f0;--primary:#635bff;--primary2:#4f46e5;--danger:#dc3545;--ok:#087f5b;--shadow:0 12px 30px #10182812}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}.app{max-width:480px;margin:auto;min-height:100vh;background:var(--bg);padding-bottom:84px}.top{padding:22px 18px 14px;background:linear-gradient(135deg,#111827,#262a62);color:white;border-radius:0 0 28px 28px}.brand{display:flex;align-items:center;gap:12px}.logo{width:45px;height:45px;border-radius:14px;background:#ffffff18;display:grid;place-items:center;font-size:23px;border:1px solid #ffffff25}.brand b{font-size:18px}.brand small{display:block;color:#cbd5e1;margin-top:3px}.hero{padding:24px 2px 14px}.hero h1{font-size:30px;line-height:1.08;margin:0 0 10px}.hero p{margin:0;color:#d7dbea;line-height:1.5}.section{padding:18px}.notice{background:#fff7ed;border:1px solid #fed7aa;border-radius:16px;padding:13px 14px;color:#7c2d12;font-size:13px;line-height:1.45;margin-bottom:14px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:19px;padding:16px;box-shadow:var(--shadow);cursor:pointer;transition:.18s}.card:active{transform:scale(.98)}.card .ico{font-size:25px;margin-bottom:12px}.card h3{font-size:15px;margin:0 0 6px}.card p{font-size:12px;color:var(--muted);line-height:1.45;margin:0}.wide{grid-column:1/-1}.label{font-size:13px;font-weight:800;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin:2px 0 12px}.view{display:none}.view.active{display:block}.panel{background:white;border:1px solid var(--line);border-radius:20px;margin:18px;padding:18px;box-shadow:var(--shadow)}.back{border:0;background:none;padding:0;color:var(--primary);font-weight:800;cursor:pointer;margin-bottom:16px}.panel h2{margin:0 0 8px;font-size:24px}.panel>p{color:var(--muted);line-height:1.55;font-size:14px}.item{padding:13px 0;border-bottom:1px solid var(--line);font-size:14px;line-height:1.5}.item:last-child{border-bottom:0}.btn{border:0;border-radius:12px;padding:12px 14px;font-weight:800;cursor:pointer;background:var(--primary);color:white}.btn.secondary{background:#eef0ff;color:#4338ca}.btn.danger{background:var(--danger)}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.check{display:flex;gap:10px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}.check input{width:19px;height:19px;margin-top:1px;accent-color:var(--primary)}.result{margin-top:15px;padding:15px;border-radius:15px;background:#f0fdf4;border:1px solid #bbf7d0;color:#166534;display:none;line-height:1.5;font-size:14px}.tabs{display:flex;gap:8px;overflow:auto;padding-bottom:4px;margin:14px 0}.tab{white-space:nowrap;border:1px solid var(--line);background:white;border-radius:999px;padding:9px 13px;font-weight:700;color:var(--muted);cursor:pointer}.tab.active{background:#111827;color:white;border-color:#111827}.platform{display:none}.platform.active{display:block}.bottom{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(480px,100%);height:68px;background:#fff;border-top:1px solid var(--line);display:flex;justify-content:space-around;align-items:center;z-index:5}.nav{border:0;background:none;color:var(--muted);font-size:11px;font-weight:700;cursor:pointer}.nav span{display:block;font-size:21px;margin-bottom:2px}.nav.active{color:var(--primary)}.tag{display:inline-block;background:#ede9fe;color:#5b21b6;border-radius:999px;padding:5px 9px;font-size:11px;font-weight:800}.dangerbox{background:#fff1f2;border:1px solid #fecdd3;border-radius:15px;padding:14px;color:#9f1239;font-size:14px;line-height:1.5}.success{background:#ecfdf5;border:1px solid #a7f3d0;border-radius:15px;padding:14px;color:#065f46;font-size:14px;line-height:1.5}.footer{padding:20px 18px;color:#98a2b3;text-align:center;font-size:11px;line-height:1.5}@media(min-width:700px){body{padding:20px}.app{border-radius:30px;overflow:hidden;box-shadow:0 20px 70px #10182818}}
+
+.quick-start{background:#fff;border:1px solid var(--line);border-radius:20px;padding:16px;margin:0 0 18px;box-shadow:var(--shadow)}.qs-title{font-size:18px;font-weight:900}.qs-sub{font-size:12px;color:var(--muted);margin:4px 0 13px}.qs-row{display:grid;grid-template-columns:1fr;gap:9px}.qs-row button{border:1px solid var(--line);background:#fafaff;border-radius:14px;padding:12px;text-align:left;cursor:pointer}.qs-row b{display:block;font-size:13px}.qs-row span{display:block;font-size:11px;color:var(--muted);margin-top:3px}.mini-flow{margin:0 18px 12px;padding:14px;border-radius:16px;background:#eef0ff;color:#3730a3;font-size:12px;line-height:1.5}.mini-flow span{font-weight:800}.eyebrow{font-size:11px;font-weight:900;letter-spacing:.08em;color:var(--primary)}.panel .hero{padding:0 0 10px}.panel .hero h2{margin-top:8px}@media(min-width:400px){.qs-row{grid-template-columns:1fr 1fr}.qs-row button:last-child{grid-column:1/-1}}</style>
+<style>
+.extra-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.mini-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:15px;box-shadow:var(--shadow);cursor:pointer}.mini-card .ico{font-size:23px;margin-bottom:8px}.mini-card h3{font-size:14px;margin:0 0 5px}.mini-card p{font-size:11.5px;color:var(--muted);line-height:1.45;margin:0}.progress{height:8px;background:#e9ecf3;border-radius:99px;overflow:hidden;margin:10px 0}.progress i{display:block;height:100%;width:0;background:var(--primary);transition:.3s}.callout{background:#eef2ff;border:1px solid #c7d2fe;border-radius:16px;padding:14px;font-size:13px;line-height:1.5;color:#3730a3;margin:14px 0}.steps{display:grid;gap:10px;margin:14px 0}.step{display:flex;gap:11px;align-items:flex-start}.step b:first-child{min-width:28px;height:28px;border-radius:9px;background:#111827;color:#fff;display:grid;place-items:center;font-size:12px}.resource{border:1px solid var(--line);border-radius:14px;padding:13px;margin-top:10px}.resource a{display:inline-block;margin-top:8px}.small{font-size:12px;color:var(--muted);line-height:1.5}.pillrow{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0}.pill{background:#f2f4f7;border:1px solid var(--line);border-radius:999px;padding:7px 10px;font-size:11px;font-weight:700;color:#475467}.searchbox{width:100%;border:1px solid var(--line);border-radius:13px;padding:12px;font:inherit;outline:none;margin:8px 0 12px}.searchbox:focus{border-color:var(--primary)}
+@media(max-width:360px){.grid,.extra-grid{grid-template-columns:1fr}}
+
+/* Dark / Light Mode */
+body.dark{--bg:#0b1020;--card:#151b2d;--text:#f5f7ff;--muted:#aab3c5;--line:#293249;--shadow:0 14px 35px #00000055}
+body.dark .card,body.dark .mini-card,body.dark .panel,body.dark .quick-start,body.dark .tab,body.dark .bottom{background:var(--card);color:var(--text)}
+body.dark .tab{color:var(--muted)}
+body.dark .tab.active{background:#f5f7ff;color:#111827}
+body.dark .qs-row button{background:#101629;color:var(--text);border-color:var(--line)}
+body.dark .pill{background:#20283b;color:#d0d5dd;border-color:var(--line)}
+body.dark .success{background:#0d2b22;border-color:#185a48;color:#a7f3d0}
+body.dark .dangerbox{background:#35131a;border-color:#67212d;color:#fecdd3}
+body.dark .notice{background:#302315;border-color:#62451e;color:#fed7aa}
+body.dark .callout{background:#1b2140;border-color:#353f75;color:#c7d2fe}
+.theme-toggle{border:1px solid #ffffff35;background:#ffffff16;color:white;border-radius:10px;padding:8px 10px;cursor:pointer;font-weight:800}
+.theme-row{display:flex;justify-content:flex-end;margin-top:10px}
+</style>
+<style>
+.search-result-btn{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:999px;padding:8px 11px;font-size:12px;font-weight:700;cursor:pointer}
+body.dark .search-result-btn{background:var(--card);color:var(--text)}
+.empty-search{font-size:12px;color:var(--muted)}
+</style>
+</head><body><main class="app">
+<section id="home" class="view active"><header class="top"><div class="brand"><div class="logo">🛡️</div><div><b>CyberZen</b><small>Digital Safety Toolkit · Mymensingh</small></div></div><div class="theme-row" style="gap:8px">
+      <button class="theme-toggle" id="langToggle" onclick="toggleLanguage()" aria-label="Toggle Bangla and English">বাংলা</button>
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle dark and light mode">🌙</button>
+    </div><div class="hero"><span class="tag">01 · CYBERBULLYING & ONLINE HARASSMENT</span><h1>Know what to do when online life becomes unsafe.</h1><p>Simple, step-by-step help to recognize harm, protect yourself, save proof, report abuse and support others.</p></div></header>
+<div class="quick-start" id="quickStart">
+  <div class="qs-title">⚡ Quick Start</div>
+  <div class="qs-sub">Choose a tool and take one safe step.</div>
+  <div class="qs-row">
+    <button onclick="show('check')"><b>🔍 Check a situation</b><span>Look for online-harm warning signs.</span></button>
+    <button onclick="show('evidence')"><b>📸 Save evidence</b><span>Organize important proof safely.</span></button>
+    <button onclick="show('account')"><b>🔐 Secure my account</b><span>Review passwords, 2FA and devices.</span></button>
+  </div>
+</div>
+<div class="quick-start" id="searchPanel">
+  <div class="qs-title">🔎 Find a topic</div>
+  <input id="topicSearch" class="searchbox" type="search" placeholder="Search: blackmail, privacy, evidence..." oninput="filterTopics()">
+  <div id="searchResults" class="pillrow"></div>
+</div>
+<div class="section"><div class="notice">⚠️ <b>If you are in immediate physical danger:</b> move to a safe place, tell someone you trust, and contact appropriate emergency support.</div><div class="label">Start here — choose what you need</div><div class="grid"><div class="card wide" onclick="show('harass')"><div class="ico">🚨</div><h3>Someone Is Harassing Me</h3><p>Get the safest next steps without arguing, retaliating or making the situation worse.</p></div><div class="card" onclick="show('check')"><div class="ico">🔍</div><h3>Is This Cyberbullying?</h3><p>Answer a few simple questions to understand warning signs.</p></div><div class="card" onclick="show('report')"><div class="ico">📱</div><h3>I Want to Report</h3><p>Find reporting and blocking guidance for major platforms.</p></div><div class="card" onclick="show('evidence')"><div class="ico">📸</div><h3>Save Proof</h3><p>Learn what to save before blocking or deleting.</p></div><div class="card" onclick="show('account')"><div class="ico">🔐</div><h3>Secure My Account</h3><p>Password, 2FA, devices and privacy basics.</p></div><div class="card" onclick="show('private')"><div class="ico">🔒</div><h3>Protect Private Content</h3><p>Reduce risks around photos, videos and personal information.</p></div></div><div class="callout"><b>🧭 The CyberZen Safety Path</b><br><span class="small">Recognize → Protect → Save Proof → Report → Get Support → Recover</span></div><div class="label">More tools</div><div class="extra-grid"><div class="mini-card" onclick="show('unwanted')"><div class="ico">💬</div><h3>Unwanted Messages</h3><p>Set boundaries and handle repeated contact safely.</p></div><div class="mini-card" onclick="show('help')"><div class="ico">🆘</div><h3>Threat & Safety Guide</h3><p>Blackmail, threats, stalking, impersonation and more.</p></div><div class="mini-card" onclick="show('bystander')"><div class="ico">👥</div><h3>Help a Friend</h3><p>Support someone without spreading the harm.</p></div><div class="mini-card" onclick="show('recovery')"><div class="ico">🌱</div><h3>After the Incident</h3><p>Practical recovery and next-step guidance.</p></div><div class="mini-card" onclick="show('checklist')"><div class="ico">✅</div><h3>My Safety Checklist</h3><p>Complete a quick personal safety review.</p></div><div class="mini-card" onclick="show('campaign')"><div class="ico">📣</div><h3>Safer Community</h3><p>Take part in respectful online culture.</p></div></div><div class="label" style="margin-top:20px">For our community</div><div class="success"><b>CyberZen Community Promise</b><br>We report harm, protect privacy, support people who are targeted, and never forward abuse for entertainment.</div></div><div class="footer">CyberZen · DKC Digital Respect & Cohesion Fellowship 2026<br>Jatiya Kabi Kazi Nazrul Islam University · Mymensingh Division<br><span class="small">Educational toolkit. For legal matters, use official sources and professional advice.</span></div></section>
+
+<section id="harass" class="view"><div class="panel"><button class="back" onclick="show('home')">← Back to toolkit</button><button class="btn" onclick="show('legal')">⚖️ Legal Help</button><h2>🚨 I'm Being Harassed</h2><p>Focus on safety first. You do not need to argue with or convince the person harassing you.</p><div class="dangerbox"><b>If there is a direct threat:</b><br>Do not meet the person alone. Move somewhere safe, tell a trusted person, preserve the threat, and seek appropriate local help.</div><div class="item"><b>1. Pause & don't engage.</b><br>Avoid retaliating or sending threats back. This can escalate the situation.</div><div class="item"><b>2. Preserve evidence.</b><br>Save screenshots, usernames, profile links, dates/times and relevant messages.</div><div class="item"><b>3. Restrict access.</b><br>Use block, mute, restrict or privacy controls where appropriate.</div><div class="item"><b>4. Report.</b><br>Report the account/content through the platform's safety or reporting options.</div><div class="item"><b>5. Tell someone.</b><br>Choose a trusted friend, family member, teacher, university authority or appropriate support service.</div><div class="actions"><button class="btn" onclick="show('evidence')">Save Evidence →</button><button class="btn secondary" onclick="show('report')">Report & Block →</button></div></div></section>
+
+<section id="check" class="view"><div class="panel"><button class="back" onclick="show('home')">← Back</button><h2>🔍 Cyberbullying Quick Check</h2><p>Select what is happening. This is a simple safety check. It does not decide whether a crime happened.</p><div id="questions"></div><button class="btn" onclick="checkResult()">Check My Situation</button><div id="result" class="result"></div></div></section>
+
+<section id="evidence" class="view"><div class="panel"><button class="back" onclick="show('home')">← Back</button><h2>📸 Save the Evidence</h2><p>Evidence can help you explain what happened to a platform, trusted person, university authority or appropriate service.</p><div class="success"><b>Best practice:</b> preserve the original context when possible. Keep a private backup somewhere secure.</div><div class="item">☐ Screenshot the message, post, comment or profile.</div><div class="item">☐ Record the username/profile name and profile link if available.</div><div class="item">☐ Note the date and approximate time.</div><div class="item">☐ Keep threatening messages or repeated-contact patterns together.</div><div class="item">☐ Save relevant emails or notification messages.</div><div class="item"><b>Don't:</b> edit screenshots to make them look more dramatic, publicly repost harmful content, or forward intimate material.</div></div></section>
+
+<section id="report" class="view"><div class="panel"><button class="back" onclick="show('home')">← Back</button><h2>📱 Report & Block</h2><p>Apps change their buttons from time to time. Usually, open the post, message or profile menu → choose Report → select the closest reason → submit. Then Block or Restrict if you need to.</p><div class="tabs"><button class="tab active" onclick="platform('fb',this)">Facebook</button><button class="tab" onclick="platform('ig',this)">Instagram</button><button class="tab" onclick="platform('wa',this)">WhatsApp</button><button class="tab" onclick="platform('tt',this)">TikTok</button><button class="tab" onclick="platform('yt',this)">YouTube</button></div><div id="fb" class="platform active"><div class="item"><b>Facebook</b><br>Open the profile/post/comment menu → find the report option → choose the closest safety category → submit. Then use block/restrict controls if needed.</div></div><div id="ig" class="platform"><div class="item"><b>Instagram</b><br>Open the profile/post/message options → report the relevant content/account → choose the closest category. Consider restrict/block and privacy controls.</div></div><div id="wa" class="platform"><div class="item"><b>WhatsApp</b><br>Open the chat/contact information → use the reporting option when available → block the account if needed. Preserve important messages before removing the chat.</div></div><div id="tt" class="platform"><div class="item"><b>TikTok</b><br>Open the relevant content/profile menu → report → choose the closest category. Use block and privacy controls where appropriate.</div></div><div id="yt" class="platform"><div class="item"><b>YouTube</b><br>Use the content menu/report option → choose the relevant reason. For repeated harassment, also review account/channel blocking and comment controls.</div></div><div class="notice" style="margin-top:16px">Tip: If the abuse is serious, save evidence before blocking or deleting anything.</div></div></section>
+
+<section id="account" class="view"><div class="panel"><button class="back" onclick="show('home')">← Back</button><h2>🔐 Account Safety</h2><p>Complete these basics regularly.</p><div class="check"><input type="checkbox"> <span>Use a long, unique password for important accounts.</span></div><div class="check"><input type="checkbox"> <span>Turn on two-factor authentication (2FA) where available.</span></div><div class="check"><input type="checkbox"> <span>Review logged-in devices and sign out of unknown sessions.</span></div><div class="check"><input type="checkbox"> <span>Check recovery email/phone information.</span></div><div class="check"><input type="checkbox"> <span>Review profile visibility, tagging and message settings.</span></div><div class="check"><input type="checkbox"> <span>Never share passwords or one-time login codes.</span></div></div></section>
+
+<section id="private" class="view"><div class="panel"><button class="back" onclick="show('home')">← Back</button><h2>🔒 Private Content Protection</h2><p>Think about where personal information can travel once it is shared.</p><div class="item"><b>Before sharing:</b> ask whether the image/video reveals your face, location, school, room, documents or other identifying details.</div><div class="item"><b>Review access:</b> check who can view, download, comment on or reshare your content.</div><div class="item"><b>Never send intimate content under pressure.</b> Pressure, threats or blackmail are reasons to seek support—not to comply.</div><div class="item"><b>If private content is shared without consent:</b> preserve evidence, report it, block/restrict the account where appropriate, and tell a trusted person.</div></div></section>
+
+<section id="unwanted" class="view"><div class="panel"><button class="back" onclick="show('home')">← Back</button><h2>💬 Unwanted Messages</h2><p>You are allowed to set boundaries online.</p><div class="item"><b>Low-risk situation:</b> you may send one clear boundary such as “Please stop contacting me.” Then stop responding.</div><div class="item"><b>Repeated contact:</b> mute/restrict/block and preserve evidence.</div><div class="item"><b>Threatening or sexual messages:</b> don't negotiate or send more content. Save evidence and involve a trusted person.</div><div class="item"><b>Unknown accounts:</b> avoid opening suspicious links or sharing personal information.</div></div></section>
+
+<section id="bystander" class="view"><div class="panel"><button class="back" onclick="show('home')">← Back</button><h2>👥 Bystander Guide</h2><p>If someone you know is being targeted, your support can reduce isolation without increasing the risk.</p><div class="item"><b>Listen privately.</b><br>Believe them enough to take their concern seriously; don't demand proof in public.</div><div class="item"><b>Don't forward the harmful content.</b><br>Sharing it can increase the harm and spread private material.</div><div class="item"><b>Help preserve evidence.</b><br>Offer to help organize screenshots or links securely.</div><div class="item"><b>Report harmful content.</b><br>If safe and appropriate, use the platform's reporting tools.</div><div class="item"><b>Stay with them.</b><br>Encourage support from a trusted adult, university authority or appropriate service when the situation is serious.</div></div></section>
+
+<section id="recovery" class="view"><div class="panel"><button class="back" onclick="show('home')">← Back</button><h2>🌱 After the Incident</h2><p>Online abuse can leave you stressed, embarrassed or unsure what to do next. Recovery is also part of digital safety.</p><div class="steps"><div class="step"><b>1</b><div><strong>Step away.</strong><br>Take a break from the account or platform if you need one.</div></div><div class="step"><b>2</b><div><strong>Keep support around you.</strong><br>Talk to a trusted friend, family member, teacher or university authority.</div></div><div class="step"><b>3</b><div><strong>Secure your account.</strong><br>Change passwords, review devices and update privacy settings.</div></div><div class="step"><b>4</b><div><strong>Follow up.</strong><br>Keep report numbers, screenshots or relevant links in one secure place.</div></div></div><div class="success"><b>Remember:</b> Being targeted online is not your fault. You do not have to handle everything alone.</div></div></section>
+<section id="checklist" class="view"><div class="panel"><button class="back" onclick="show('home')">← Back</button><h2>✅ My Safety Checklist</h2><p>Tick the actions you have completed. This is a practical self-check, not a score about you.</p><div id="safetyChecks"></div><div class="progress"><i id="safetyProgress"></i></div><div id="safetyStatus" class="result" style="display:block">0 of 8 completed.</div></div></section>
+<section id="campaign" class="view"><div class="panel"><button class="back" onclick="show('home')">← Back</button><h2>📣 Build a Safer Community</h2><p>CyberZen is not only about individual protection. Safer online spaces also depend on what bystanders, friends and communities choose to do.</p><div class="item"><b>🚫 Report, Don't Revenge</b><br>Use reporting tools instead of retaliation.</div><div class="item"><b>🤐 Don't Forward Abuse</b><br>Do not spread screenshots, private photos or humiliating content.</div><div class="item"><b>🤝 Support, Don't Shame</b><br>Check in privately with someone who is being targeted.</div><div class="item"><b>🧠 Think Before You Share</b><br>Ask whether your post could expose, embarrass or endanger another person.</div><div class="item"><b>🛡️ Protect Privacy</b><br>Ask for consent before sharing someone else's personal content.</div><div class="callout"><b>Campus campaign idea:</b><br>“Pause. Protect. Report. Support.” — a short peer-led digital safety campaign for university communities.</div></div></section>
+<section id="legal" class="view"><div class="panel"><button class="back" onclick="show('home')">← Back</button><div class="hero"><span class="eyebrow">⚖️ LEGAL SUPPORT</span><h2>Know Your Rights. Know Where to Get Help.</h2><p>Online harassment can have real-world consequences. This section gives general information about legal support in Bangladesh and shows where to seek official help.</p></div><div class="item"><h3>🇧🇩 Current Cyber Law</h3><p>The current government law is the <b>Cyber Security Act 2026</b>. The official Bangladesh Laws website records that it repealed the Cyber Security Ordinance 2025 and replaced the earlier Cyber Security Act 2023.</p><a class="btn" href="https://bdlaws.minlaw.gov.bd/act-print-1710.html" target="_blank" rel="noopener">View Official Law ↗</a></div><div class="item"><h3>🛡️ When You Face Online Harassment</h3><ul><li>Save screenshots, URLs, usernames, dates and relevant messages.</li><li>Keep original evidence safely; do not edit the original files.</li><li>Block/restrict and report the account when appropriate.</li><li>For threats, blackmail, stalking, impersonation, doxxing or non-consensual intimate-content sharing, consider making an official complaint.</li><li>Do not retaliate, threaten the harasser, or redistribute harmful/private content.</li></ul></div><div class="item"><h3>👮 Police Cyber Support for Women (PCSW)</h3><p>Bangladesh Police's PCSW provides legal and technological assistance to women facing cybercrime and can connect victims with an appropriate police unit or victim-support service.</p><p><b>Hotline:</b> 01320-000888<br><b>Email:</b> cybersupport.women@police.gov.bd</p><a class="btn" href="https://www.police.gov.bd/en/police_cyber_support_for_women" target="_blank" rel="noopener">Official PCSW Information ↗</a></div><div class="item"><h3>⚖️ Government Legal Aid</h3><p>The National Legal Aid Services Organization (NLASO) provides government legal assistance information.</p><p><b>Legal Aid Helpline: 16699</b></p><a class="btn" href="https://nlaso.gov.bd/" target="_blank" rel="noopener">Official NLASO ↗</a></div><div class="dangerbox"><h3>🚨 Immediate Physical Danger?</h3><p>If an online threat creates an immediate risk to your physical safety, move to a safe place and contact someone you trust. Bangladesh's emergency service is <b>999</b>.</p><a class="btn danger" href="tel:999">Call 999</a></div><div class="notice"><b>Important legal note:</b> This toolkit is educational and does not replace advice from a lawyer or legal-aid provider. Whether a specific incident is an offence depends on the facts and applicable law. Laws and procedures can change, so use the official sources above for the current position.</div></div></section><section id="help" class="view"><div class="panel"><button class="back" onclick="show('home')">← Back</button><h2>🆘 Threat & Safety Guide</h2><div class="dangerbox"><b>Threats, blackmail, stalking, impersonation, doxxing or non-consensual intimate-content sharing can be serious.</b> Prioritize physical safety and get help from a trusted person.</div><div class="item"><b>Threat of physical harm:</b> move to a safe place and seek immediate local assistance.</div><div class="item"><b>Blackmail:</b> don't pay or send additional material just because someone threatens you. Preserve the threats and seek support.</div><div class="item"><b>Impersonation:</b> preserve the fake profile/account details and report it to the platform.</div><div class="item"><b>Personal information exposed:</b> review account security, remove exposed information where possible, and tell someone you trust.</div><div class="item"><b>Intimate content shared without consent:</b> don't redistribute it. Preserve relevant evidence and report the content/account.</div><div class="actions"><button class="btn" onclick="show('evidence')">Evidence Guide</button><button class="btn secondary" onclick="show('account')">Secure Account</button></div></div></section>
+
+<nav class="bottom"><button class="nav active" onclick="show('home',this)"><span>⌂</span>Home</button><button class="nav" onclick="show('check',this)"><span>✓</span>Check</button><button class="nav" onclick="show('report',this)"><span>⚑</span>Report</button><button class="nav" onclick="show('legal',this)"><span>⚖️</span>Legal</button><button class="nav" onclick="show('account',this)"><span>⚙</span>Safety</button></nav>
+</main><script>
+const safetyItems=["I use a unique password for important accounts.","I have enabled 2FA where available.","I review logged-in devices regularly.","My recovery email/phone is up to date.","I know how to block and report on the platforms I use.","I know where to save evidence securely.","I avoid sharing passwords or one-time codes.","I know who I can contact if online abuse becomes serious."];document.getElementById('safetyChecks').innerHTML=safetyItems.map((q,i)=>`<label class="check"><input type="checkbox" onchange="updateSafety()"><span>${q}</span></label>`).join('');function updateSafety(){let a=[...document.querySelectorAll('#safetyChecks input')],n=a.filter(x=>x.checked).length,p=document.getElementById('safetyProgress'),r=document.getElementById('safetyStatus');p.style.width=(n/a.length*100)+'%';r.innerHTML=n===a.length?'<b>All done.</b><br>Your basic safety checklist is complete.':'<b>'+n+' of '+a.length+' completed.</b><br>Keep going — small safety steps add up.'}updateSafety();
+const qs=["Are you receiving repeated unwanted messages or comments?","Is someone insulting, humiliating or targeting you online?","Has someone shared your photo, video or personal information without permission?","Is a fake account being used to impersonate or harass you?","Has someone threatened you, blackmailed you or pressured you for private content?"];document.getElementById('questions').innerHTML=qs.map((q,i)=>`<label class="check"><input type="checkbox" id="q${i}"><span>${q}</span></label>`).join('');
+function show(id,btn){document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'});if(btn){document.querySelectorAll('.nav').forEach(x=>x.classList.remove('active'));btn.classList.add('active')}}
+function checkResult(){let n=[0,1,2,3,4].filter(i=>document.getElementById('q'+i).checked).length;let r=document.getElementById('result');r.style.display='block';r.innerHTML=n===0?'No selected signs yet. If something still feels unsafe, talk to someone you trust.':n<3?'<b>Some warning signs are present.</b><br>Consider preserving evidence, limiting contact and using platform reporting tools.':n<5?'<b>Several warning signs are present.</b><br>Prioritize evidence preservation, account/privacy protection, reporting and support from a trusted person.':'<b>High-risk situation.</b><br>Preserve threats/evidence, avoid escalation, prioritize physical safety and involve a trusted person or appropriate support as soon as possible.'}
+function platform(id,el){document.querySelectorAll('.platform').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));el.classList.add('active')}
+
+function toggleTheme(){
+  const dark=document.body.classList.toggle('dark');
+  localStorage.setItem('cyberzenTheme',dark?'dark':'light');
+  const b=document.getElementById('themeToggle');
+  if(b) b.textContent=dark?'☀️':'🌙';
+}
+(function(){
+  const saved=localStorage.getItem('cyberzenTheme');
+  if(saved==='dark'){
+    document.body.classList.add('dark');
+    document.addEventListener('DOMContentLoaded',()=>{const b=document.getElementById('themeToggle');if(b)b.textContent='☀️';});
+  }
+})();
+</script>
+<script>
+const bn = {
+"Digital Safety Toolkit · Mymensingh":"ডিজিটাল সেফটি টুলকিট · ময়মনসিংহ",
+"CYBERBULLYING & ONLINE HARASSMENT":"সাইবারবুলিং ও অনলাইন হয়রানি",
+"Know what to do when online life becomes unsafe.":"অনলাইনে পরিস্থিতি অনিরাপদ হলে কী করতে হবে তা জানুন।",
+"Simple, step-by-step help to recognize harm, protect yourself, save proof, report abuse and support others.":"ক্ষতি শনাক্ত করা, নিজেকে সুরক্ষিত রাখা, প্রমাণ সংরক্ষণ, রিপোর্ট করা এবং অন্যকে সহায়তা করার সহজ ধাপে ধাপে নির্দেশনা।",
+"If you are in immediate physical danger:":"আপনি যদি তাৎক্ষণিক শারীরিক বিপদে থাকেন:",
+"move to a safe place, tell someone you trust, and contact appropriate emergency support.":"নিরাপদ স্থানে যান, বিশ্বস্ত কাউকে জানান এবং উপযুক্ত জরুরি সহায়তা নিন।",
+"Start here — choose what you need":"এখান থেকে শুরু করুন — আপনার প্রয়োজন বেছে নিন",
+"Someone Is Harassing Me":"কেউ আমাকে হয়রানি করছে",
+"Get the safest next steps without arguing, retaliating or making the situation worse.":"তর্ক বা প্রতিশোধ না নিয়ে নিরাপদ পরবর্তী পদক্ষেপ নিন।",
+"Is This Cyberbullying?":"এটি কি সাইবারবুলিং?",
+"Answer a few simple questions to understand warning signs.":"কিছু সহজ প্রশ্নের উত্তর দিয়ে সতর্কতার লক্ষণ বুঝুন।",
+"I Want to Report":"আমি রিপোর্ট করতে চাই",
+"Find reporting and blocking guidance for major platforms.":"প্রধান প্ল্যাটফর্মে রিপোর্ট ও ব্লক করার নির্দেশনা দেখুন।",
+"Save Proof":"প্রমাণ সংরক্ষণ করুন",
+"Learn what to save before blocking or deleting.":"ব্লক বা ডিলিট করার আগে কী সংরক্ষণ করবেন তা জানুন।",
+"Secure My Account":"আমার অ্যাকাউন্ট সুরক্ষিত করুন",
+"Password, 2FA, devices and privacy basics.":"পাসওয়ার্ড, 2FA, ডিভাইস ও গোপনীয়তার মৌলিক বিষয়।",
+"Protect Private Content":"ব্যক্তিগত কনটেন্ট সুরক্ষিত করুন",
+"Reduce risks around photos, videos and personal information.":"ছবি, ভিডিও ও ব্যক্তিগত তথ্যের ঝুঁকি কমান।",
+"The CyberZen Safety Path":"CyberZen নিরাপত্তার পথ",
+"Recognize → Protect → Save Proof → Report → Get Support → Recover":"শনাক্ত করুন → সুরক্ষিত করুন → প্রমাণ সংরক্ষণ করুন → রিপোর্ট করুন → সহায়তা নিন → ঘুরে দাঁড়ান",
+"More tools":"আরও টুল",
+"Unwanted Messages":"অনাকাঙ্ক্ষিত বার্তা",
+"Set boundaries and handle repeated contact safely.":"সীমা নির্ধারণ করুন এবং বারবার যোগাযোগ নিরাপদভাবে সামলান।",
+"Threat & Safety Guide":"হুমকি ও নিরাপত্তা নির্দেশিকা",
+"Blackmail, threats, stalking, impersonation and more.":"ব্ল্যাকমেইল, হুমকি, স্টকিং, ছদ্মবেশ ধারণ ইত্যাদি।",
+"Help a Friend":"বন্ধুকে সহায়তা করুন",
+"Support someone without spreading the harm.":"ক্ষতি না ছড়িয়ে কাউকে সহায়তা করুন।",
+"After the Incident":"ঘটনার পর",
+"Practical recovery and next-step guidance.":"পুনরুদ্ধার ও পরবর্তী পদক্ষেপের ব্যবহারিক নির্দেশনা।",
+"My Safety Checklist":"আমার নিরাপত্তা চেকলিস্ট",
+"Complete a quick personal safety review.":"নিজের নিরাপত্তার দ্রুত পর্যালোচনা করুন।",
+"Safer Community":"নিরাপদ কমিউনিটি",
+"Take part in respectful online culture.":"সম্মানজনক অনলাইন সংস্কৃতি গড়ে তুলুন।",
+"For our community":"আমাদের কমিউনিটির জন্য",
+"CyberZen Community Promise":"CyberZen কমিউনিটি অঙ্গীকার",
+"We report harm, protect privacy, support people who are targeted, and never forward abuse for entertainment.":"আমরা ক্ষতিকর কনটেন্ট রিপোর্ট করি, গোপনীয়তা রক্ষা করি, আক্রান্ত ব্যক্তিকে সহায়তা করি এবং বিনোদনের জন্য কখনো হয়রানিমূলক কনটেন্ট ছড়াই না।",
+"Back to toolkit":"টুলকিটে ফিরে যান",
+"Back":"ফিরে যান",
+"I'm Being Harassed":"আমি হয়রানির শিকার হচ্ছি",
+"Focus on safety first. You do not need to argue with or convince the person harassing you.":"প্রথমে নিরাপত্তাকে গুরুত্ব দিন। যে ব্যক্তি আপনাকে হয়রানি করছে তার সঙ্গে তর্ক বা তাকে বোঝানোর প্রয়োজন নেই।",
+"If there is a direct threat:":"সরাসরি হুমকি থাকলে:",
+"Do not meet the person alone. Move somewhere safe, tell a trusted person, preserve the threat, and seek appropriate local help.":"একা ওই ব্যক্তির সঙ্গে দেখা করবেন না। নিরাপদ স্থানে যান, বিশ্বস্ত কাউকে জানান, হুমকির প্রমাণ সংরক্ষণ করুন এবং উপযুক্ত স্থানীয় সহায়তা নিন।",
+"Pause & don't engage.":"থামুন ও যোগাযোগে জড়াবেন না।",
+"Preserve evidence.":"প্রমাণ সংরক্ষণ করুন।",
+"Restrict access.":"অ্যাক্সেস সীমিত করুন।",
+"Report.":"রিপোর্ট করুন।",
+"Tell someone.":"কাউকে জানান।",
+"Save Evidence →":"প্রমাণ সংরক্ষণ →",
+"Report & Block →":"রিপোর্ট ও ব্লক →",
+"Cyberbullying Quick Check":"সাইবারবুলিং দ্রুত যাচাই",
+"Select what is happening. This is a simple safety check. It does not decide whether a crime happened.":"যা ঘটছে তা নির্বাচন করুন। এটি একটি সাধারণ নিরাপত্তা যাচাই; এটি কোনো অপরাধ ঘটেছে কি না তা নির্ধারণ করে না।",
+"Check My Situation":"আমার পরিস্থিতি যাচাই করুন",
+"Save the Evidence":"প্রমাণ সংরক্ষণ করুন",
+"Report & Block":"রিপোর্ট ও ব্লক",
+"Account Safety":"অ্যাকাউন্ট নিরাপত্তা",
+"Private Content Protection":"ব্যক্তিগত কনটেন্ট সুরক্ষা",
+"Unwanted Messages":"অনাকাঙ্ক্ষিত বার্তা",
+"Bystander Guide":"প্রত্যক্ষদর্শী/সহায়তাকারীর নির্দেশিকা",
+"After the Incident":"ঘটনার পর",
+"My Safety Checklist":"আমার নিরাপত্তা চেকলিস্ট",
+"Build a Safer Community":"আরও নিরাপদ কমিউনিটি তৈরি করুন",
+"Legal Help":"আইনি সহায়তা",
+"Know Your Rights. Know Where to Get Help.":"আপনার অধিকার জানুন। কোথায় সহায়তা পাবেন জানুন।",
+"Legal Support":"আইনি সহায়তা",
+"Threat & Safety Guide":"হুমকি ও নিরাপত্তা নির্দেশিকা",
+"Home":"হোম",
+"Check":"যাচাই",
+"Report":"রিপোর্ট",
+"Legal":"আইনি সহায়তা",
+"Safety":"নিরাপত্তা",
+"Evidence Guide":"প্রমাণ নির্দেশিকা",
+"Secure Account":"অ্যাকাউন্ট সুরক্ষিত করুন"
+};
+
+let lang="en";
+const originalText = new WeakMap();
+
+function translateNode(node){
+  if(node.nodeType===3){
+    const raw=node.nodeValue;
+    const key=raw.trim();
+    if(!originalText.has(node)) originalText.set(node, raw);
+    if(lang==="bn" && bn[key]) node.nodeValue=raw.replace(key,bn[key]);
+    else if(lang==="en") node.nodeValue=originalText.get(node);
+  } else if(node.nodeType===1){
+    if(node.id==="langToggle") return;
+    [...node.childNodes].forEach(translateNode);
+  }
+}
+
+function toggleLanguage(){
+  lang=lang==="en"?"bn":"en";
+  document.documentElement.lang=lang==="bn"?"bn":"en";
+  translateNode(document.body);
+  document.getElementById("langToggle").textContent=lang==="bn"?"English":"বাংলা";
+  localStorage.setItem("cyberzenLang",lang);
+}
+(function(){
+  const saved=localStorage.getItem("cyberzenLang");
+  if(saved==="bn"){
+    lang="bn";
+    document.addEventListener("DOMContentLoaded",()=>{
+      translateNode(document.body);
+      const b=document.getElementById("langToggle");
+      if(b)b.textContent="English";
+    });
+  }
+})();
+</script>
+
+
+<script>
+const cyberzenTopics = [
+  ["Cyberbullying","অনলাইন হয়রানি ও সাইবারবুলিং","check"],
+  ["Harassment","হয়রানি","harass"],
+  ["Evidence","প্রমাণ সংরক্ষণ","evidence"],
+  ["Report & Block","রিপোর্ট ও ব্লক","report"],
+  ["Account Safety","অ্যাকাউন্ট নিরাপত্তা","account"],
+  ["Private Content","ব্যক্তিগত কনটেন্ট","private"],
+  ["Unwanted Messages","অনাকাঙ্ক্ষিত বার্তা","unwanted"],
+  ["Threats & Blackmail","হুমকি ও ব্ল্যাকমেইল","help"],
+  ["Help a Friend","বন্ধুকে সহায়তা","bystander"],
+  ["Recovery","ঘটনার পর পুনরুদ্ধার","recovery"],
+  ["Safety Checklist","নিরাপত্তা চেকলিস্ট","checklist"],
+  ["Safer Community","নিরাপদ কমিউনিটি","campaign"],
+  ["Legal Help","আইনি সহায়তা","legal"]
+];
+
+function filterTopics(){
+  const q=(document.getElementById("topicSearch")?.value||"").toLowerCase().trim();
+  const box=document.getElementById("searchResults");
+  if(!box)return;
+  const hits=cyberzenTopics.filter(x=>
+    !q || x[0].toLowerCase().includes(q) || x[1].toLowerCase().includes(q)
+  ).slice(0,8);
+  box.innerHTML=hits.length
+    ? hits.map(x=>`<button class="search-result-btn" onclick="show('${x[2]}')">${x[0]}</button>`).join("")
+    : '<span class="empty-search">No matching topic found.</span>';
+}
+document.addEventListener("DOMContentLoaded", filterTopics);
+</script>
+
+</body></html>
